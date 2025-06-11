@@ -22,7 +22,8 @@
   },
   "scripts": {
     "test": "vitest",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "type": "module",
   "keywords": [
