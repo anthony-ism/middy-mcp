@@ -119,13 +119,11 @@ const mcp = ({
         request.context.jsonRPCMessages
       );
 
-      if (responseMessages !== undefined) {
-        request.response = {
-          ...request.response,
-          statusCode: 200,
-          body: JSON.stringify(responseMessages),
-        };
-      }
+      request.response = {
+        ...request.response,
+        statusCode: 200,
+        body: JSON.stringify(responseMessages),
+      };
     },
   };
 };
